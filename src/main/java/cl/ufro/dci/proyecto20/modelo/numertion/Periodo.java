@@ -1,0 +1,11 @@
+package cl.ufro.dci.proyecto20.modelo.numertion;
+
+public enum Periodo {
+    UNA_AM,DOS_AM,TRES_AM,CUATRO_AM,
+    CINCO_AM,SEIS_AM,SIETE_AM,OCHO_AM,
+    NUEVE_AM,DIEZ_AM,ONCE_AM,DOCE_PM,UNA_PM
+    ,DOS_PM,TRES_PM,CUATRO_PM,CINCO_PM,SEIS_PM,
+    SIETE_PM,OCHO_PM,NUEVE_PM,DIEZ_PM,ONCE_PM,DOCE_AM;
+
+
+}

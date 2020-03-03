@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Horario</title>
+</head>
+<body>
+<div class="modal-dialog text-center">
+    <div class=".col-sm-8">
+        <div class="modal-content">
+            <div class="col-12">
+                <form method="post">
+                    <div class="form-group row">
+                        <label for="inputTarea" class="col-sm-2 col-form-label" >Tarea</label>
+                        <div class="col-sm-12">
+                            <input type="text" th:name="tarea" class="col-form-control"  id="inputTarea" placeholder="Tarea" required >
+                        </div>
+                        <label for="inputHora" class="col-sm-2 col-form-label">Hora Inicio</label>
+                        <div class="col-sm-12">
+                            <input type="time" th:name="hora" id="inputHora" min="09:00" max="22:00" step="3000" placeholder="hora Inicio">
+                        </div>
+                        <label for="inpHorFinal" class="col-sm-2 col-form-label">Hora Final</label>
+                        <div class="col-sm-12">
+                            <input type="time" th:name="horaFinal" id="inpHorFinal" min="09:00" max="22:00" step="3000" placeholder="hora final">
+                        </div>
+                    </div>
+                    <button class="modal-text-right" type="submit" class="btn btn-primary mb-2">Guardar</button>
+                </form>
+            </div>
+         </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Los iconos tipo Solid de Fontawesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<!-- Nuestro css-->
+<link rel="stylesheet"type="text/css"href="static/css/index.css">
+
+</body>
+</html>
